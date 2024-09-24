@@ -1,0 +1,119 @@
+/* Write some CSS below */
+
+/* style.css */
+body {
+    font-family: Overpass;
+    color: #404042;
+    font-size: 18px;
+  }
+
+  .banner{
+    background: url(./images/background.jpg) center/cover;
+    color: white;
+    text-align: center;
+    padding: 150px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+    
+  }
+
+  .banner p{
+    margin-bottom: 40px;
+    color: rgb(134,136,136);
+  }
+  .button-blue{
+    background: rgb(29,72,227);
+    color: white;
+    padding: 20px 40px;
+    border-radius: 5px;
+  }
+
+  .card-class{
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 1000px;
+    margin: 0 auto;
+    
+  }
+  .card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    /*overflow-x: hidden;*/
+  }
+  .card-white{
+    box-shadow: 4px 1px 10px 0px #00000052;
+    padding: 50px;
+    border-radius: 10px;
+  }
+  .card-white img{
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .footer{
+    background: rgb(64,64,66);
+    color: white;
+    padding: 50px 100px 50px 250px;
+    margin-top: 50px;
+    letter-spacing: 2px;
+  }
+  
+  h1, h2, h3 {
+    font-family: Chivo;
+  }
+  
+  a {
+    color: #1A48E3;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .3s;
+  }
+  
+  a:hover {
+    color: #CE2FAE;
+  }
+
+  /* ****** Responsive side ******* */
+
+  @media (max-width: 1030px) {
+    .card-class{
+        width: 800px;
+
+    }
+    }
+
+    @media (max-width: 830px) {
+        .card-class{
+            width: 700px;
+    
+        }
+        }
+
+        @media (max-width: 730px) {
+            .card-class{
+                width: 500px;
+        
+            }
+            .card-container{
+            
+                grid-template-columns: 1fr;
+        
+            }
+            .card-white img{
+                width: 100%;
+                border-radius: 10px;
+              }
+              .footer{
+                
+                padding-left: 80px;
+                
+              }
+
+              .banner h1{
+                font-size: 1.5rem;
+                
+              }
+            }
